@@ -36,3 +36,9 @@ install.packages(c("googlesheets4"))
 install.packages(c("googlesheets4","tidyverse"))
 ```
 
+```{r}
+a <- 2
+a = 2 # = 與 <-同義
+b <- 3
+```
+
