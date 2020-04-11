@@ -1,0 +1,141 @@
+ALLUSERSPROFILE      C:\ProgramData
+APPDATA              C:\Users\irene\AppData\Roaming
+CLASSPATH            .;C:\Program Files
+                     (x86)\QuickTime\QTSystem\QTJava.zip
+CLICOLOR_FORCE       1
+CommonProgramFiles   C:\Program Files\Common Files
+CommonProgramFiles(x86)
+                     C:\Program Files (x86)\Common Files
+CommonProgramW6432   C:\Program Files\Common Files
+COMPUTERNAME         LAPTOP-K42BQVP0
+ComSpec              C:\WINDOWS\system32\cmd.exe
+DISPLAY              :0
+DriverData           C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING
+                     Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING
+                     Default
+GFORTRAN_STDERR_UNIT
+                     -1
+GFORTRAN_STDOUT_UNIT
+                     -1
+HOME                 C:/Users/irene/Documents
+HOMEDRIVE            C:
+HOMEPATH             \Users\irene
+LOCALAPPDATA         C:\Users\irene\AppData\Local
+LOGONSERVER          \\LAPTOP-K42BQVP0
+MSYS2_ENV_CONV_EXCL
+                     R_ARCH
+NUMBER_OF_PROCESSORS
+                     4
+OneDrive             C:\Users\irene\OneDrive
+OneDriveConsumer     C:\Users\irene\OneDrive
+OS                   Windows_NT
+PATH                 C:\Program
+                     Files\R\R-3.5.2\bin\x64;C:\Program Files
+                     (x86)\Intel\iCLS Client\;C:\Program
+                     Files\Intel\iCLS
+                     Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program
+                     Files (x86)\Intel\Intel(R) Management
+                     Engine Components\DAL;C:\Program
+                     Files\Intel\Intel(R) Management Engine
+                     Components\DAL;C:\Program Files
+                     (x86)\Intel\Intel(R) Management Engine
+                     Components\IPT;C:\Program
+                     Files\Intel\Intel(R) Management Engine
+                     Components\IPT;C:\Program Files
+                     (x86)\NVIDIA
+                     Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program
+                     Files
+                     (x86)\QuickTime\QTSystem\;C:\Users\irene\Desktop\Phone\;C:\WINDOWS\System32\OpenSSH\;C:\Users\irene\Anaconda3;C:\Users\irene\Anaconda3\Library\mingw-w64\bin;C:\Users\irene\Anaconda3\Library\usr\bin;C:\Users\irene\Anaconda3\Library\bin;C:\Users\irene\Anaconda3\Scripts;C:\Users\irene\AppData\Local\Microsoft\WindowsApps;
+PATHEXT              .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE
+                     AMD64
+PROCESSOR_IDENTIFIER
+                     Intel64 Family 6 Model 61 Stepping 4,
+                     GenuineIntel
+PROCESSOR_LEVEL      6
+PROCESSOR_REVISION   3d04
+ProgramData          C:\ProgramData
+ProgramFiles         C:\Program Files
+ProgramFiles(x86)    C:\Program Files (x86)
+ProgramW6432         C:\Program Files
+PSModulePath         C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+PUBLIC               C:\Users\Public
+QTJAVA               C:\Program Files
+                     (x86)\QuickTime\QTSystem\QTJava.zip
+R_ARCH               /x64
+R_COMPILED_BY        gcc 4.9.3
+R_DOC_DIR            C:/PROGRA~1/R/R-35~1.2/doc
+R_HOME               C:/PROGRA~1/R/R-35~1.2
+R_LIBS_USER          C:/Users/irene/Documents/R/win-library/3.5
+R_USER               C:/Users/irene/Documents
+RMARKDOWN_MATHJAX_PATH
+                     C:/Program
+                     Files/RStudio/resources/mathjax-26
+RS_LOCAL_PEER        \\.\pipe\22238-rsession
+RS_RPOSTBACK_PATH    C:/Program Files/RStudio/bin/rpostback
+RS_SHARED_SECRET     63341846741
+RSTUDIO              1
+RSTUDIO_CONSOLE_COLOR
+                     256
+RSTUDIO_CONSOLE_WIDTH
+                     80
+RSTUDIO_MSYS_SSH     C:/Program
+                     Files/RStudio/bin/msys-ssh-1000-18
+RSTUDIO_PANDOC       C:/Program Files/RStudio/bin/pandoc
+RSTUDIO_SESSION_PORT
+                     22238
+RSTUDIO_USER_IDENTITY
+                     irene
+RSTUDIO_WINUTILS     C:/Program Files/RStudio/bin/winutils
+SESSIONNAME          Console
+SystemDrive          C:
+SystemRoot           C:\WINDOWS
+TEMP                 C:\Users\irene\AppData\Local\Temp
+TERM                 xterm-256color
+TMP                  C:\Users\irene\AppData\Local\Temp
+USERDOMAIN           LAPTOP-K42BQVP0
+USERDOMAIN_ROAMINGPROFILE
+                     LAPTOP-K42BQVP0
+USERNAME             irene
+USERPROFILE          C:\Users\irene
+windir               C:\WINDOWS
+[1] "LC_COLLATE=Chinese (Traditional)_Taiwan.950;LC_CTYPE=Chinese (Traditional)_Taiwan.950;LC_MONETARY=Chinese (Traditional)_Taiwan.950;LC_NUMERIC=C;LC_TIME=Chinese (Traditional)_Taiwan.950"
+<locale>
+Numbers:  123,456.78
+Formats:  %AD / %AT
+Timezone: UTC
+Encoding: UTF-8
+<date_names>
+Days:   Sunday (Sun), Monday (Mon), Tuesday (Tue), Wednesday (Wed),
+        Thursday (Thu), Friday (Fri), Saturday (Sat)
+Months: January (Jan), February (Feb), March (Mar), April (Apr), May
+        (May), June (Jun), July (Jul), August (Aug), September
+        (Sep), October (Oct), November (Nov), December (Dec)
+AM/PM:  AM/PM
+R version 3.5.2 (2018-12-20)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows >= 8 x64 (build 9200)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=Chinese (Traditional)_Taiwan.950 
+[2] LC_CTYPE=Chinese (Traditional)_Taiwan.950   
+[3] LC_MONETARY=Chinese (Traditional)_Taiwan.950
+[4] LC_NUMERIC=C                                
+[5] LC_TIME=Chinese (Traditional)_Taiwan.950    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods  
+[7] base     
+
+other attached packages:
+[1] readr_1.3.1
+
+loaded via a namespace (and not attached):
+ [1] compiler_3.5.2  R6_2.4.0        hms_0.5.3       tools_3.5.2    
+ [5] pillar_1.4.3    rstudioapi_0.11 tibble_2.1.3    yaml_2.2.0     
+ [9] Rcpp_1.0.3      crayon_1.3.4    vctrs_0.2.4     knitr_1.22     
+[13] xfun_0.5        pkgconfig_2.0.2 rlang_0.4.5    
