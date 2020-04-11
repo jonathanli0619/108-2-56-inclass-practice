@@ -58,6 +58,7 @@ listExample <-
       )
     )
   )
+listExample
 # 有多少位置可選：
 length(listExample)
 ```
