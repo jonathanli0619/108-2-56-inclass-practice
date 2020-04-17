@@ -36,6 +36,8 @@ pi <- c(3,1,4,1,5,9,2,6,5,3,5)
 
 請取出pi的第8個數字並儲存到叫做gift的物件。
 ```{r ans1}
+gift <- pi[[8]]
+gift
 # gift
 ```
 
@@ -48,6 +50,8 @@ fromJSON("https://www.dropbox.com/s/uday7x99k9q9sxm/course.json?dl=1", simplifyD
 ### 2.1 特定物件取出
 請取出course中time_place的資料儲存到叫做time_place的list物件。
 ```{r ans21}
+time_place <- list(course[[2]]$time_place)
+time_place
 # time_place
 ```
 
