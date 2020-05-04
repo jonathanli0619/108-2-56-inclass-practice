@@ -38,12 +38,16 @@ fromJSON("https://data.ntpc.gov.tw/od/data/api/CB6C96C8-D514-42EA-8591-0F4447E79
 ### 1.1 違反法條種類
 針對law元素，列出裡面出現過的條款（不重覆陳列）存在violatedArticles (class character)：
 ```{r ans11}
+unique(badEmployers$law)-> violatedArticles
+violatedArticles
 # violatedArticles
 ```
 
 ### 1.2 各項法條違反者數目
 使用table()函數呈現出每個條款的違法廠商數目，存在table_countsByArticle (class table), 正確答案在執行names(table_countsByArticle)時會出現前一題的所有條款。
 ```{r ans12}
+table(badEmployers$law)->  table_countsByArticle
+table_countsByArticle
 # table_countsByArticle
 ```
 
@@ -52,12 +56,22 @@ fromJSON("https://data.ntpc.gov.tw/od/data/api/CB6C96C8-D514-42EA-8591-0F4447E79
 
 提示：table class物件為integer type，可對它取max()得到最大值。
 ```{r ans13}
+max(table_countsByArticle)
+mostViolatedArticle <- badEmployers$law[max(table_countsByArticle)]
+mostViolatedArticle
+
+names(mostViolatedArticle)
+as.integer(mostViolatedArticle)
 # mostViolatedArticle
 ```
 
 ### 1.4 最常違反法條之內容
 找出最常違反條款的法條內容（可參見lawContent這個元素），並將此內容存在mostViolatedArticle_content (class character, length=1)
 ```{r ans14}
+table(badEmployers$lawContent)->table_countsByViolatedArticle
+table_countsByViolatedArticle
+max(table_countsByViolatedArticle)
+badEmployers$lawContent[max(table_countsByViolatedArticle)]
 # mostViolatedArticle_content
 ```
 
