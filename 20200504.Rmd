@@ -150,6 +150,7 @@ example$allowance <-
     levels=c("0-1000", "1001-2000", "2000+"),
     ordered = T # 設定為可排序factor
   )
+example$allowance
 ```
 
 ```{r}
@@ -171,6 +172,7 @@ list_victimAges_female$`數目` <-
   as.integer(list_victimAges_female$`數目`)
 list_victimAges_female$`年齡層` <- 
   as.factor(list_victimAges_female$`年齡層`)
+list_victimAges_female$年齡層
 ```
 ```{r}
 levels(list_victimAges_female$年齡層) -> levels_ages
