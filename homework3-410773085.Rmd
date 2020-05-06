@@ -48,6 +48,8 @@ violatedArticles
 ```{r ans12}
 table(badEmployers$law)->  table_countsByArticle
 table_countsByArticle
+class(table_countsByArticle)
+names(table_countsByArticle)
 # table_countsByArticle
 ```
 
@@ -56,9 +58,7 @@ table_countsByArticle
 
 提示：table class物件為integer type，可對它取max()得到最大值。
 ```{r ans13}
-pick_most <- max(table_countsByArticle)
-table(badEmployers$law[max(table_countsByArticle)])
-mostViolatedArticle <- badEmployers$law[max(table_countsByArticle)]
+mostViolatedArticle <- table_countsByArticle[which.max(table_countsByArticle)]
 mostViolatedArticle
 
 names(mostViolatedArticle)
@@ -70,16 +70,21 @@ as.integer(mostViolatedArticle)
 找出最常違反條款的法條內容（可參見lawContent這個元素），並將此內容存在mostViolatedArticle_content (class character, length=1)
 ```{r ans14}
 table(badEmployers$lawContent)->table_countsByViolatedArticle
-table_countsByViolatedArticle
-max(table_countsByViolatedArticle)
-badEmployers$lawContent[max(table_countsByViolatedArticle)]
+mostViolatedArticle_content <- names(table_countsByViolatedArticle[which.max(table_countsByViolatedArticle)])
+mostViolatedArticle_content
+class(mostViolatedArticle_content)
+length(mostViolatedArticle_content)
 # mostViolatedArticle_content
 ```
 
 ### 1.5 處份日期最常落在幾月
 找出處份日期最常出現的月份並存在popularSentenceMonth（class character, length=1）：
 ```{r ans15}
-badEmployers$dt[m]
+class(badEmployers$dt)
+table2 <- badEmployers$dt
+table2
+date<-ymd(as.character.Date(table2))
+popularSentenceMonth
 # popularSentenceMonth
 ```
 
@@ -132,12 +137,12 @@ ntpu_namelist
 志願沒有填北大經濟的人可以進一階篩選嗎?
 logical儲存的本質是甚麼?
 ```{r ans23}
-pick_chineseabove12 <- students10$國文 >= 12
-pick_engmathabove26 <- students10$英文+students10$數學 >= 26
-students10$姓名[pick_chineseabove12]
-students10$姓名[pick_engmathabove26]
-
-ntpu_namelist
+pick1 <- students10$`志願`=="北大經濟"
+pick2 <- students10$`國文`[pick1] >= 12
+pick3 <- 
+  students10$`英文`[pick1][pick2]+students10$`數學`[pick1][pick2] >= 26
+ntpu_econtpu_eco <- students10$`姓名`[pick1][pick2][pick3]
+ntpu_econtpu_eco
 # ntpu_econtpu_eco
 ```
 
@@ -149,5 +154,9 @@ ntpu_namelist
 
 請將榜單文字儲存到名為congrats的答案物件(class為chr)。
 ```{r ans24}
+pick_NTPU<-students10$`姓名`[students10$`姓名` %in% ntpu_econtpu_eco]
+congrats <-paste0("恭喜",pick_NTPU,"同學錄取國立臺北大學經濟系")
+class(congrats)
+congrats
 # congrats
 ```
