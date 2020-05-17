@@ -40,12 +40,36 @@ jsonlite::fromJSON("https://www.dropbox.com/s/es19f62rijrd8i7/studentHeight.json
 請將「學年度」及「年齡」都改成ordered factor, levels順序以其文字數值從小排到大。( 答案物件studentHeights本身)
 
 ```{r ans11}
+studentHeights$學年度 <-
+  factor(
+    studentHeights$學年度,
+    ordered=TRUE
+  )
+studentHeights$年齡 <-
+  factor(
+    studentHeights$年齡,
+    ordered=TRUE
+  )
+studentHeights
 # studentHeights
 ```
 
 ### 1.2 年齡層
 請在studentHeights新增「年齡層」元素（class ordered factor），其類別排序為6-8 < 9-12 < 13-15三類年齡層。
 ```{r ans12}
+level_names <- levels(studentHeights$`年齡層`)
+startingAges <- stringr::str_extract(
+  level_names,
+  "^[0-9]+"
+)
+startingAges <- as.integer(startingAges)
+names(startingAges) <- level_names
+sort(startingAges) -> startingAges
+studentHeights$`年齡層` <-
+  factor(
+    studentHeights$`年齡層`, names(startingAges)
+  )
+studentHeights$`年齡層`
 # studentHeights$`年齡層`
 ```
 
@@ -53,6 +77,14 @@ jsonlite::fromJSON("https://www.dropbox.com/s/es19f62rijrd8i7/studentHeight.json
 請創造一個named numeric vector, averageHeightByGroup (class numeric, length=3) 其值分別是三組年齡層各自所包含年齡下不分性別身高的平均（即第一個值是所有6-8歲不分學年度、不分性別身高（總計身高）的平均，再來是9-12歲，最後是13-15歲），而此vector的元素名稱也分別是"6-8", "9-12", "13-15" (hint: 數值向量x元素平均, 可用mean(x)求得； 這題也考驗同學組合數個「要不要」向量`pick_XXX`)
 
 ```{r ans13}
+studentHeights$`年齡層` <-
+  factor(
+    studentHeights$`年齡層`,
+    levels=c("6-8", "9-12", "13-15"),
+    ordered = T # 設定為可排序factor
+  )
+pick_agein6to8 <- studentHeights$`年齡層`<= "6-8"
+
 # averageHeightByGroup
 ```
 
@@ -87,6 +119,7 @@ str_replace(differentMajors,realEstateRegex,"不動系")
 ### 2.2 factor levels
 直接將differentMajors轉成factor, 並將它的levels存在currentLevels（class character）。（雖然同系有不同叫法而形成好幾個levels，這題不用去整併它。）
 ```{r ans22}
+
 # currentLevels
 ```
 
